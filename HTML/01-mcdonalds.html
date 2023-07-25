@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-mcdonalds.html</title>
+    <style>
+        body,header,  ul, li, nav, div,  button, #banner, .menuList{
+            padding: 0;
+            margin: 0;
+        }
+        .frame{
+            width: 1280px;
+            margin: auto;
+        }
+        .flex{
+            display: flex;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            background-color: white;
+            border-bottom: 1px solid #ecbe45;
+        }
+        nav{
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            justify-content: space-between;
+        }
+        nav > .img{
+            box-sizing: border-box;
+            padding: 20px 0;
+        }
+        nav > .img:hover{
+            cursor: pointer;
+        }
+        nav > ul{
+            list-style: none;
+            flex: 6;
+            justify-content: space-between;
+
+        }
+        nav > ul > li{
+            width: 156px;
+            padding: auto;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        nav > ul > li:hover{
+            cursor: pointer;
+        }
+        .util{
+            flex: 3;
+            position: relative;
+            margin: 0 0 0 50px;
+        }
+        button{
+            all: unset;
+            display: inline-block;
+            width: 80px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: center;
+            border-radius: 48px;
+            background: #db0007;
+        }
+        nav > .util > button:hover{
+            cursor: pointer;
+        }
+        button:nth-child(2){
+            background: #c2822E;
+        }
+        button:nth-child(3){
+            background: #324938;
+        }
+        button:last-child{
+            all: unset;
+            display: inline-block;
+
+        }
+        #banner{
+            width: 1920px;
+            margin: 0 auto;
+        }
+        #banner:hover{
+            cursor: pointer;
+        }
+        main{
+            padding: 30px 0 60px;
+        }
+        .menu{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+        .menuList{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        .item{
+            display: block;
+            overflow: hidden;
+            width: 366px;
+            height: 438px;
+            border: 1px solid #e4e4e4;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .item:hover{
+            cursor: pointer;
+        }
+        a{
+            all: unset;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 24px 30px;
+        }
+        .more{
+            margin-top: 80px;
+            text-align: center;
+        }
+        .more > img{
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+           
+            border-radius: 50em;
+        }
+        .more > img:hover{
+            cursor: pointer;
+        }
+        footer{
+            background-color: #292929;
+            height: 260px;
+        }
+        .footer{
+            padding: 45px 0 50px;
+            justify-content: space-between;
+        }
+        .footer > .ul > ul{
+            list-style: none;
+            
+        }
+        .footer > .ul > ul:first-child{
+            width: 190px;
+        }
+        .footer > .ul > ul > li {
+            padding: 3px;
+            font-size: 14px;
+        }
+        .footer > .ul > ul:first-child > li {
+            font-weight: 600;
+            color: white;
+        }
+        
+        .footer > .ul > ul:first-child > li:first-child{
+            color: yellow;
+        }
+        .footer > .ul > ul:first-child > li:hover{
+            cursor: pointer;
+        }
+        .footer > .ul > ul:nth-child(2) >li{
+            color: #9d9d9d;
+        }
+        .icons > img{
+            padding-left: 10px;
+        }
+        .icons > img:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="color">
+    <header>
+
+        <nav class="frame flex">
+            <div class="img">
+                <img src="https://www.mcdonalds.co.kr/kor/images/common/logo.png" style="width: 51px; height: 45px;">
+            </div>
+            
+            <ul class="flex">
+                <li>Menu</li>
+                <li>Store</li>
+                <li>What's New</li>
+                <li>Story</li>
+            </ul>
+            <div class="util">
+                <button>임차문의</button>
+                <button>RECRUIT</button>
+                <button>ENG</button>
+                <button><img src="돋보기.png" style="width: 45px;"></button>
+    
+            </div>
+            
+        </nav>
+    </header>
+
+    <div id="banner">
+        <img src="https://www.mcdonalds.co.kr/upload/main/banner/1680589479787.jpg" alt="">
+    </div>
+
+    <main class="frame">
+        <div class="menu">
+            McDonald's LIVE
+        </div>
+
+        <div class="menuList">
+            <div class="item">
+                <a href="#">
+                    <img src="https://www.mcdonalds.co.kr/upload/main/card/1688536163368.jpg">
+                    <p>땅 끝자락 진도에서 찾은 <br>한국의 맛</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="https://www.mcdonalds.co.kr/upload/main/card/1688536267129.jpg">
+                    <p>100% 우리 곡물로 살린 <br>고소한 한국의 맛</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="https://www.mcdonalds.co.kr/upload/main/card/1689752728419.jpg">
+                    <p>맥크리스피 버거 세트 먹고?<br>슈퍼팝 페스티벌 가자</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="https://www.mcdonalds.co.kr/upload/main/card/1686722914159.jpg">
+                    <p>가성비 간식 맛집, 맥도날드 해피 스낵!</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="https://www.mcdonalds.co.kr/upload/main/card/1684299963307.jpg">
+                    <p>여름의 맛!<br>겉바속쫄 맥윙!</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="https://www.mcdonalds.co.kr/upload/main/card/1685434964328.jpg">
+                    <p>달콤한 아이스크림과<br>진~한 라떼의 만남</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="more"><img src="https://www.mcdonalds.co.kr/kor/images/common/btn_more.png" alt=""></div>
+    </main>
+
+    <footer>
+        <div class="footer frame flex">
+            <div class="ul flex">
+
+                <ul>
+                    <li>개인정보 처리방침</li>
+                    <li>위치정보 이용약관</li>
+                    <li>사이트맵</li>
+                    <li>임차문의</li>
+                    <li>고객문의</li>
+                    <li>인재채용</li>
+                </ul>
+                <ul>
+                    <li>한국맥도날드(유)</li>
+                    <li>대표이사: 김기원</li>
+                    <li>사업자 등록번호: 101-81-26409</li>
+                    <li>전화주문: 1600-5252</li>
+                    <li>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</li>
+                </ul>
+            </div>
+            <div class="icons flex">
+                <img src="icon.png" style="width: 170px; height: 40px;">
+                <img src="https://www.mcdonalds.co.kr/kor/images/common/web_accessibility.png" style="width: 100px; height: 70px;">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
