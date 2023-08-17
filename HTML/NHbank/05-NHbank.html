@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-NHbank.html</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .frame{
+            width: 1260px;
+            margin: 0 auto;
+            border: 1px dashed #dadada;
+        }
+        .sb{
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo{
+            height: 40px;
+            margin-top: 20px;
+        }
+        #menu{
+            border-bottom: 1px solid #dadada;
+        }
+        .logoname{
+            font-size: 25px;
+        }
+        .choice{
+            margin-top: 5px;
+        }
+        .ul{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+        }
+        .ul > li{
+            padding: 0 7px;
+        }
+        #back{
+            background-image: url("back1.png");
+        }
+         #banner{
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        h1{
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        #news{
+            width: 95%;
+            height: auto;
+            margin: auto;
+            background-color: blue;
+            border-radius: 30px 30px 30px 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .newsleft{
+            width: 900px;
+            margin-left: 20px;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 30px 30px 30px 60px;
+        }
+        img[src*="이벤트"]{
+            border-radius: 30px 30px 30px 60px;
+            margin:20px 10px;
+        }
+        .left{
+            display: flex;
+            flex-flow: wrap;
+        }
+        .left > ul{
+            width: 285px;
+            list-style: none;
+            padding: 0 4px;
+        }
+        
+        .newsright> ul{
+            
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            color: white;
+            
+        }
+        .intro, .info{
+            width: 45%;
+            border: 1px solid #dadada;
+            border-radius: 30px 30px 30px 60px;
+            margin: 20px;
+            padding: 20px;
+        }
+        h3{
+            color: blue;
+        }
+        .h{
+            width: 95%;
+            display: flex;
+            border: 1px solid #dadada;
+            border-radius: 30px 30px 30px 60px;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <div class="frame sb">
+            <div class="logoname">NH농협은행</div>
+            <div class="choice">
+                <select name="lang">
+                    <option value="">Language</option>
+                    <option value="kr">한국어</option>
+                    <option value="En">English</option>
+                    <option value="Jn">日本</option>
+                    <option value="cn">中文</option>
+                </select>
+                <select name="bank">
+                    <option value="">Banking</option>
+                    <option value="pers">개인</option>
+                    <option value="company">기업</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div class="frame">
+            <ul class="ul">
+                <li>은행안내</li>
+                <li>윤리경영</li>
+                <li>금융소비자보호</li>
+                <li>기업지배구조</li>
+                <li>경영정보</li>
+                <li>ESG 경영</li>
+                <li>채용정보</li>
+                <li>홍보센터</li>
+                <li>≡</li>
+            </ul>
+        </div>
+    </div>
+   
+    <div id="back">
+        <div class="frame">
+            <div id="banner">
+               <h1>사랑받는 <b>일등 민족은행</b></h1>
+               농업인과 고객 모두가 행복한 금융을 만들어 갑니다
+            </div>
+        
+            <div id="news">
+                <div class="newsleft ">
+                    <h3>NH뉴스</h3>
+                    <div class="left">
+                        <img src="이벤트.jpg" width="386">
+
+                        <ul>
+                            <li><p>NH뉴스</p></li>
+                            <li><p>NH농협은행, 펀드가입 이벤트 실시</p></li>
+                            <li><p><b>NH농협은행, 펀드가입 이벤트 실시</b></p></li>
+                            <li><p>2023-07-03</p></li>
+                        </ul>
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="newsright">
+                    <button>더보기 ></button>
+                    <ul>
+                        <li>
+                            <p>NH농협은행, 국민비서 서비스 출시기념 ..</p>
+                            <p>2023-07-03</p>
+                        </li>
+                        <li>
+                            <p>NH농협은행, 농식품분양 성장 지원을 위해 ...</p>
+                            <p>2023-07-02</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="inf">
+        <div class="frame sb">
+            <div class="intro">
+                <h3>NH농협소개</h3>
+                <p>대한민국의 행복파트너</p>
+                자세히보기>
+            </div>
+            <div class="info">
+                <h3>NH농협소개</h3>
+                <p>대한민국의 행복파트너</p>
+                자세히보기>
+            </div>
+        </div>
+    </div>
+
+    <div id="help">
+        <div class="frame">
+            <div class="h">
+                <div>
+                    <h3>고객의소리</h3>
+                    자세히보기>
+                </div>
+                <ul class="ul">
+                    <li>칭찬/불만/제안/민원</li>
+                    <li>민원사례(FAQ)</li>
+                    <li>민원사무편람</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div class="frame"></div>
+    </div>
+
+</body>
+</html>
