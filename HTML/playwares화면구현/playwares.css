@@ -1,0 +1,301 @@
+@charset 'utf-8';
+body, ul, li, div, header, main, footer, a, ol, p{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 13px;
+        }
+        .frame{
+            width: 1170px;
+            margin: auto;
+            padding: 0 10px;
+        }
+        .flex{
+            display: flex;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            background-color: white;
+            border-bottom:  1px solid #e0e0e0;
+        }
+        #header{
+            width: 1170px;
+            height: 92px;
+            margin: auto;
+        }
+        ul, ol{
+            list-style: none;
+        }
+        a{
+            all: unset;
+        }
+        img{
+            display: inline-block;
+        }
+        .headLogo> img{
+            width: 250px;
+        }
+        .headLogo{
+            width: 288px;
+            line-height: 140px;
+            border-right:  1px solid #e0e0e0;
+        }
+        .headRight{
+            width: 860px;
+        }
+        .headTop{
+            height: 41px;
+            line-height: 41px;
+            justify-content: space-between;
+            padding-left: 5px;
+            border-bottom: 1px solid #e0e0e0;
+            border-right:  1px solid #e0e0e0;
+
+        }
+        .headTop > .headIcons> img{
+            margin: 9px 3px;
+        }
+        .headTop > .headIcons> img:hover, .headLogo> img:hover{
+            cursor: pointer;
+        }
+        .headTop > .login > a{
+            padding: 10px;
+        }
+        .headTop > .login > a:hover{
+            color: #69c8d6;
+            cursor: pointer;
+            background-color: #e5e5e5;
+        }
+        .headTop > .login > input{
+            margin: 8px 10px;
+            padding: 1px 2px;
+        }
+        .headBottom{
+            line-height: 50px;
+        }
+        .headBottom > ul > li{
+            position: relative;
+            flex: 1;
+            text-align: center;
+            border-right:  1px solid #e0e0e0;
+        }
+        
+        .headBottom > ul > li > ul{
+            position: absolute;
+            top: 51px;
+        }
+        .headBottom > ul > li:hover{
+            color: #69c8d6;
+            cursor: pointer;
+            background-color: #e5e5e5;
+        }
+        .headBottom > ul > li > ul > li{
+            width: 150px;
+            color: #909090;
+            border-bottom: 1px solid #484848;
+            background-color: #343434;
+            text-align: left;
+            padding-left: 20px;
+            display: none;
+        }
+        .headBottom > ul > li:hover > ul > li{
+            display: block;
+        }
+        .banner {
+            width: 1150px;
+            height: 400px;
+            margin: auto;
+            background-image: url("http://playwares.com/files/thumbnails/025/348/058/1150x400.crop.jpg");
+        }
+        .banner:hover, img:hover{
+            cursor: pointer;
+        }
+        .bannerBottom{
+            width: 41%;
+            height: 60px;
+            margin-left: auto;
+            margin-top: auto;
+            background-color: white;
+            justify-content: flex-end;
+        }
+        .banner > .bannerBottom > ol {
+            line-height: 60px;
+            align-items: start;
+        }
+        .bannerBottom > a{
+            width: 60px;
+            height: 60px;
+            line-height: 55px;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #008bce;
+            margin-left: 3px;
+        }
+        .bannerBottom > a:hover{
+            cursor: pointer;
+            background-color: #4caddd;
+        }
+        .section{
+            padding-top: 40px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .section > .secRight, .secimg, .secleft{
+            margin-bottom: 40px;
+        }
+        .secleft{
+            margin-right: 18px;
+            border: 1px solid #cccccc;
+        }
+        .leftimg{
+            width: 380px;
+            height: 230px;
+        }
+        .leftContent{
+            width: 375px;
+            padding: 40px 20px;
+        }
+        h4{
+            color: #1c99d1;
+        }
+        
+        .leftContent:hover > h4, .leftContent:hover > p{
+            cursor: pointer;
+            color: #26b0b9;
+        }
+        .secRight , .sec2{
+            width: 372px;
+            margin-bottom: 40px;
+        }
+        .secRight > ul, .sec2 > ul{
+            height: 46px;
+        } 
+        .secRight > ul > li, .sec2 > ul > li{
+            flex: 1;
+            padding: 0 8px;
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .sec2 > ul > li{
+            background-color: white;
+        }
+
+        .secRight > ul > li:first-child,  .sec2 > ul > li:first-child{
+            background-color: #ffe400;
+        }
+        .secRight > ul > li:last-child{
+            background-color: #d4d4d4;
+            color: white;
+        }
+        .secRight > ul > li:last-child > p:hover,
+        .secRight > ul > li:last-child > a:hover{
+            cursor: pointer;
+            color: #26b0b9;
+        }
+        .secRight > ul > li > p, .sec2 > ul > li > p{
+            display: inline-block;
+        }
+    
+        .sec1table,  .sec2table, .con{
+            padding: 15px 10px;
+        }
+        .sec1table > tbody> tr > td, .sec2table > tbody> tr > td{
+            padding: 6px 3px;
+            border-bottom: 1px solid #eee;
+        }
+        .tdtltle, .sec2table > .tdtltle:hover{
+            color: #535353;
+            font-weight: bold;
+        }
+        
+        .tdnum{
+            color: #26b0b9;
+            font-weight: bold;
+        }
+        .sec2table > tbody> tr > td.tdtltle{
+            color: #535353;
+            font-weight: bold;
+            width: 260px;
+        }
+        .sec2table > ul > li:last-child > p:hover,
+        .sec2table > ul > li:last-child > a:hover{
+            cursor: pointer;
+            color: #26b0b9;
+        }
+        .tdtltle:hover, .sec2table > .tdtltle:hover{
+            cursor: pointer;
+            color: #26b0b9;
+
+        }
+        .reviewcon{
+            margin-left: 10px;
+        }
+        .mainbottom > img{
+            display: inline-block;
+        }
+        .mainbottom{
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+       footer{
+        height: 229px;
+        margin-top: 40px;
+        padding: 20px 0 50px;
+        background-color: #313131;
+       }
+       .footer > div{
+        width: 290px;
+        padding-left: 20px;
+        color: #7a7a7a;
+       }
+       .footer > div:first-child{
+        padding-right: 20px;
+        padding-left: 0;
+       }
+       .footer > div:first-child > h3{
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 15px;
+       }
+       .footer > div > h3{
+        margin: 20px 0 10px;
+        color: white;
+       }
+       .footer > div > hr{
+        margin: 20px 0;
+       }
+       .footer > div > p{
+        margin-bottom: 5px;
+       }
+       aside{
+        position:fixed ;
+        top: 120px;
+        right: 10px;
+        width: 70px;
+        border: 1px solid #dbdbdb;
+        background-color: #ffffff;
+       }
+       aside img{
+        width: 70px;
+        height: 55px;
+        overflow: hidden;
+       }
+       aside p{
+        padding: 5px 0;
+        text-align: center;
+        font-size: 12px;
+        border-bottom: 1px solid #dbdbdb;
+       }
+       aside p:last-child{
+        border-bottom: none;
+       }
+       aside >  div:hover{
+        cursor: pointer;
+        color: #1c98cd;
+       }
