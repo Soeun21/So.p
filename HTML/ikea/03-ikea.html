@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-ikea.html</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .frame{
+            width: 1320px;
+            margin: auto;
+        }
+        #sideBtn{
+            display: flex;
+            flex-direction: column;
+            font-size: 1em;
+            position: absolute;
+            left: 200px;
+            top: 70px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #sideBtn > span:first-child{
+            width: 40px;
+            height: 40px;
+            font-size: 2em;
+            line-height: 36px;
+            font-weight: bold;
+        }
+        #sideBtn > span:first-child:hover{
+            background-color: darkgray;
+            border-radius: 50%;
+        }
+        aside{
+            box-sizing: border-box;
+            width: 480px;
+            height: 100vh;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            overflow-y: scroll;
+        }
+        aside.hidden{
+            left: -500px;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+        .menuTop > #closeBtn{
+            font-size: 1em;
+            font-weight: bold;
+            margin: 35px 70px;
+            padding: 10px;
+        }
+        ul, .ul{
+            list-style: none;
+            padding-left: 170px;
+        }
+        .ul{
+            display: flex;
+            padding-left: 170px;
+        }
+        .ul > li > select{
+            all: unset;
+            
+        }
+        .ul > li {
+            border: 1px solid #111111;
+            border-radius: 50rem;
+            padding: 8px 15px;
+            margin: 50px 20px 20px 0;
+        }
+        header{
+            height: 40px;
+            background-color: #111111;
+            color: white;
+        }
+        .sbc{
+            display: flex;
+            justify-content: center; 
+            line-height: 40px;
+        }
+        .sbc > span{
+            margin: auto 40px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .sb{
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        .login{
+            height: 90px;
+            line-height: 90px;
+            padding: auto;
+        }
+        .login > img{
+            width: 90px;
+            height: 36px;
+            margin:  auto 0;
+        }
+        .login > .input {
+            width: 710px;
+            height: 45px;
+            line-height: 5px;
+            margin: auto;
+            border: 2px solid transparent;
+            background-color: #f5f5f5;
+            border-radius: 50em;
+            padding: 3px 50px ;
+            font-size: 20px;
+        }
+        input{
+            all: unset;
+            width: 95%;
+            height: 45px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #757575;
+        }
+        .login > span{
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        nav{
+            border-bottom: 1px solid #f5f5f5;
+            margin-bottom: 4rem;
+        }
+        nav > ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            height: 42px;
+            padding-left: 0;
+        }
+        nav > ul > li{
+            padding: 10px;
+            font-weight: 900;
+        }
+        .middle{
+            margin-bottom: 4rem;
+        }
+        .left > img{
+            width: 871px;
+            height: 453px;
+        }
+        .right{
+            width: 448px;
+            padding: 40px;
+            background-color: #ffdd00
+        }
+        .item{
+           margin-bottom: 50px;
+        }
+        .right > div{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .right > p{
+            font-size: .85rem;
+        }
+        .right > span{
+            
+            background-color: #111111;
+            color: white;
+            font-weight: bold;
+            font-size: .75rem;
+            padding: 12px 20px;
+            border-radius: 50em;
+        }
+        .icon{
+            width: 185px;
+            height: 280px;
+            padding: 40px 32px;
+            position: relative;
+        }
+        .icon > span{
+            position: absolute;
+            bottom: 20px;
+            left: 40%;
+            z-index: 1;
+            padding: 10px 18px;
+            background-color: white;
+            border-radius: 50em;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        .item > .icon:first-child{
+            background-color: #ca5008;
+        }
+        .item > .icon:first-child > div{
+            color: white;
+            font-weight: bold;
+        }
+        .item > .icon:first-child > span{
+            width: 21px;
+            bottom: 20px;
+            left: 15%;
+            border-radius: 50%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .icon > img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input type="color">
+    
+    <header>
+        <div class="frame ">
+
+            <div class="sbc">
+                <span>📞  쉽고 편한 전화 주문, 헤이오더</span>
+                <span>🛒  베스트셀러</span>
+            
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="sideBtn">
+            <span>≡</span>
+            <span>메뉴</span>
+        </div>
+        
+        
+        <div class="frame">
+            <div class="login sticky sb">
+                <img src="ikea-logo.svg" >
+                <div class="input">
+                    
+                    <input type="search" value="🔍  검색어 입력">
+                    📸
+                </div>
+                <span>🙍‍♀️ Hej!로그인 또는 가입하기</span>
+                <span>🤍</span>
+                <span>🛒</span>
+    
+            </div>
+            <nav class="sb">
+                <ul>
+                    <li>모든제품</li>
+                    <li>공간별 쇼핑하기</li>
+                    <li>특별한 가격</li>
+                    <li>홈 액세서리</li>
+                    <li>서비스</li>
+                </ul>
+                <ul>
+                    <li>
+                        🚛
+                        <span>우편번호입력</span>
+                    </li>
+                    <li>
+                        🏟
+                        <span>매장 선택</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="middle sb">
+                <div class="left">
+                    <img src="ikea/main.avif" alt="">
+                </div>
+                <div class="right">
+                    <div>미래를 담은 클래식한 디자인</div>
+                    <p>IKEA가 창립 80주년을 맞이하며 과거의 아이코닉한 디자인을 엄선해 다시 출시합니다. 다채로운 컬러와 새로운 소재로 재탄생한 Nytillverkad 뉘틸베르카드 컬렉션을 만나보세요.</p>
+                    <br>
+                    <span>Nytillverkad 뉘틸베르카드 컬렉션 보러 가기</span>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <div class="footer">
+        <div class="frame">
+            <h2>베스트 카테고리 쇼핑하기</h2>
+
+            <div class="item sb">
+                <div class="icon">
+                    <div>IKEA 신제품 보러 가기</div>
+                    <span>→</span>
+                </div>
+                <div class="icon">
+                    <span>침실</span>
+                    <img src="ikea/침실.avif" alt="">
+                </div>
+                <div class="icon">
+                    <span>수납/정리</span>
+                    <img src="ikea/수납정리.avif" alt="">
+                </div>
+                <div class="icon">
+                    <span>홈오피스</span>
+                    <img src="ikea/홈오피스.avif" alt="">
+                </div>
+                <div class="icon">
+                    <span>다이닝</span>
+                    <img src="ikea/다이닝.avif" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <aside id="aside" class="hidden">
+        <div class="menuTop sticky" style="display: flex;">
+            <div id="closeBtn">X</div>
+            <img src="ikea-logo.svg" >
+        </div>
+        <ul>
+            <li>
+                <h1>모든 제품</h1>
+            </li>
+            <li>
+                <h1>공간별 쇼핑하기</h1>
+            </li>
+            <li>
+                <h1>특별한 가격</h1>
+            </li>
+            <li>
+                <h1>홈 액세서리</h1>
+            </li>
+            <li>
+                <h1>서비스</h1>
+            </li>
+            
+            <li>
+                <h4>신제품</h4>
+            </li>
+            <li>
+                <h4>아이디어</h4>
+            </li>
+            <li>
+                <h4>새로운 소식</h4>
+            </li>
+            <li>
+                <p>매장안내</p>
+            </li>
+            <li>
+                <p>쉽고 편한 전화 주문, 헤이오더</p>
+            </li>
+            <li>
+                <p>IKEA Live</p>
+            </li>
+            <li>
+                <p>IKEA Family</p>
+            </li>
+            <li>
+                <p>IKEA for Business</p>
+            </li>
+            <li>
+                <p>고객지원</p>
+            </li>
+            <li>
+                <p>배송조회</p>
+            </li>
+            <li>
+                <p>내 프로필</p>
+            </li>
+        </ul>
+        <ul class="ul">
+            <li>
+                <select class="select" >
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="cn">中文</option>
+                </select>
+                ▽
+            </li>
+            <li>
+                🌐
+                <select class="select" >
+                    <option value="ko">국가변경</option>
+                </select>
+            </li>
+        </ul>
+    </aside>
+
+    <script>
+        // sideBtn을 클릭하면, aside의 class가 hidden이 사라진다
+
+        const sideBtn = document.getElementById('sideBtn')
+        const aside = document.getElementById('aside')
+        const closeBtn = document.getElementById('closeBtn')
+
+
+        sideBtn.onclick = function(){
+            aside.classList.remove('hidden')
+        }
+
+        // closeBtn을 클릭하면, aside의 class목록에 hidden이 추가된다
+        closeBtn.onclick = function(){
+            aside.classList.add('hidden')
+        }
+    </script>
+    
+    
+</body>
+</html>
