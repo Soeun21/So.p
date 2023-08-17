@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.youtube.html</title>
+    <style>
+        div{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #root{
+            border: 1px dashed blue;
+            width: 2000PX;
+            margin: 50px auto;
+        }
+        .wrap{
+            border: 1px dashed orangered;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            border: 1px dashed green;
+            width: 325px;
+        }
+        .song{
+            display: flex;
+            border: 1px dashed purple;
+            margin-top: 5px;
+        }
+        .utb> img{
+            width: 320px;
+            height: 178px;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .sum > img{
+            width: 36px;
+            height: 36px;
+            display: block;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .title{
+            border: 1px dashed purple;
+            color: #0f0f0f;
+        }
+        .name, .cnt{
+            border: 1px dashed purple;
+            font-size: 14px;
+            color: #606060;
+        }
+        .cnt{
+            border: 1px dashed purple;
+        }
+    </style>
+</head>
+<body>
+    <input type="color">
+    <div id="root">
+        <div class="wrap">
+            <div class="item">
+                <div class="utb">
+                    <img src="youtube/2.webp">
+                </div>
+                <div class="song">
+                    <div class="sum">
+                        <img src="you/2.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="title">[Playlist]내가 사랑한 것들은 언젠간 날 울게 만든다</div>
+                        <div class="name">떼껄룩</div>
+                        <div class="cnt">조회수 247만회·4개월전</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="utb">
+                    <img src="youtube/1.webp">
+                </div>
+                <div class="song">
+                    <div class="sum">
+                        <img src="you/1.jpg" alt="">
+                    </div>
+                </div>
+                    <div class="title">[Playlist]매일이 주말이라면 좋겠어 | 포근포근 이불 속에서 듣는 감성 팝</div>
+                    <div class="name">essentinal;</div>
+                    <div class="cnt">조회수 148만회·4개월전</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="utb">
+                    <img src="youtube/3.webp">
+                </div>
+                <div class="song">
+                    <div class="sum">
+                        <img src="you/3.jpg" alt="">
+                    </div>
+                </div>
+                    <div class="title">[Playlist]여름밤 산책하면서 듣기 좋은 적당하 템포의 팝송</div>
+                    <div class="name">손익분기점</div>
+                    <div class="cnt">조회수 290회·1일전</div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>
